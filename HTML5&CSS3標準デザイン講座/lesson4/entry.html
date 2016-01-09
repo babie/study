@@ -11,14 +11,26 @@
 <div id="wrap">
 応募フォームのページ
 
+<form id="entryForm" action="#" method="post">
 <table border="1">
   <tr>
     <th>猫ちゃんの名前：</th>
-    <td></td>
+    <td><input type="text" name="cat-name"></td>
   </tr>
   <tr>
     <th>お住まい：</th>
-    <td></td>
+    <td>
+      <select name="pref">
+        <option value="" selected>選択してください</option>
+        <option value="北海道">北海道</option>
+        <option value="東北">東北</option>
+        <option value="関東甲信越">関東甲信越</option>
+        <option value="東海・北陸">東海・北陸</option>
+        <option value="近畿">近畿</option>
+        <option value="中国・四国">中国・四国</option>
+        <option value="九州・沖縄">九州・沖縄</option>
+      </select>
+    </td>
   </tr>
   <tr>
     <th>性別：</th>
@@ -34,17 +46,18 @@
   </tr>
   <tr>
     <th>飼い主のお名前：</th>
-    <td></td>
+    <td><input type="text" name="name"></td>
   </tr>
   <tr>
     <th>メールアドレス：</th>
-    <td></td>
+    <td><input type="email" name="email"></td>
   </tr>
   <tr>
     <th>コメント：</th>
-    <td></td>
+    <td><textarea name="comment" rows="4" cols="40"></textarea></td>
   </tr>
 </table>
+</form>
 
 <p>Copyright &copy; UCHI NO NYAN'S All Rights Reserved.</p>
 </div>

@@ -25,11 +25,19 @@ p{
 	width:100%;
 	padding:10px 0;
 	background-color:#f00;
+  position: fixed;
+  left: 0;
+  bottom: 0;
 }
 
 /*ページトップへ*/
 #pagetop{
 	margin:0;
+  margin-left: 262px;
+  position: fixed;
+  right: 0;
+  left: 50%;
+  bottom: 42px;
 }
 
 #pagetop a{

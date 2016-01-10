@@ -14,7 +14,11 @@ a:hover {
   color: #ff705b;
 }
 /*ページタイトルの設定*/
-
+h1 {
+  color: #6fbb9a;
+  text-align: center;
+  font-size: 250%;
+}
 
 /*大見出しの設定*/
 

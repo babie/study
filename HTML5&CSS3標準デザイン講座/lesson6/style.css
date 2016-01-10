@@ -20,6 +20,10 @@ h1 {
   font-size: 250%;
 }
 
+h1 span {
+  color: #d0e35b;
+}
+
 /*大見出しの設定*/
 h2 {
   color: #6fbb9a;

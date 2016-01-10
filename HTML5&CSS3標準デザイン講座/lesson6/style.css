@@ -35,7 +35,12 @@ dt {
 }
 
 /*リード文領域の設定*/
-
+#lead {
+  border-top: #6fbb9a 1px dotted;
+  border-bottom: #6fbb9a 1px dotted;
+  padding: 15px;
+  text-align: center;
+}
 
 /*「もっと見る」リンクの設定*/
 

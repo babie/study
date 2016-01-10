@@ -42,8 +42,21 @@ h2 {
   margin-bottom: 0;
 }
 
+/* 写真と特徴データの設定 */
+.ph {
+  float: left;
+  margin-right: 30px;
+}
+
+.data {
+  float: left;
+  width: 330px;
+}
+
 /*情報データ見出しの設定*/
 dt {
+  clear: left;
+  float: left;
   font-weight: bold;
 }
 
@@ -62,6 +75,7 @@ dt {
   background-image: url('img/icon-arw01.png');
   background-repeat: no-repeat;
   background-position: right center;
+  clear: left;
 }
 
 /*毛皮・性別情報（共通）*/

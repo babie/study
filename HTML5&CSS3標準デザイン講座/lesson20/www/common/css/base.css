@@ -162,21 +162,38 @@ body {
 
 #gnav a {
   display: block;
-  padding: 10px 0;
-  text-align: center;
-  text-decoration: none;
+  width: 157px;
+  height: 40px;
+  background: url('../img/gnav.png') no-repeat;
+  text-indent: -9999px;
   color: #fff;
 }
 
-#gnav a:hover {
-  background: #CCE739;
+#gnav .gnav01 a,
+#gnav .gnav06 a {
+  width: 156px;
 }
 
-#gnav a.selected {
-  background: #fff;
-  color: #00c4ab;
-  font-weight: bold;
-}
+#gnav .gnav01 a { background-position: 0 0; }
+#gnav .gnav02 a { background-position: -156px 0; }
+#gnav .gnav03 a { background-position: -313px 0; }
+#gnav .gnav04 a { background-position: -470px 0; }
+#gnav .gnav05 a { background-position: -627px 0; }
+#gnav .gnav06 a { background-position: -784px 0; }
+
+#gnav .gnav01 a:hover { background-position: 0 -40px; }
+#gnav .gnav02 a:hover { background-position: -156px -40px; }
+#gnav .gnav03 a:hover { background-position: -313px -40px; }
+#gnav .gnav04 a:hover { background-position: -470px -40px; }
+#gnav .gnav05 a:hover { background-position: -627px -40px; }
+#gnav .gnav06 a:hover { background-position: -784px -40px; }
+
+.home #gnav .gnav01 a { background-position: 0 -80px; }
+.about #gnav .gnav02 a { background-position: -156px -80px; }
+.coding #gnav .gnav03 a { background-position: -313px -80px; }
+.lesson #gnav .gnav04 a { background-position: -470px -80px; }
+.faq #gnav .gnav05 a { background-position: -627px -80px; }
+.inquiry #gnav .gnav06 a { background-position: -784px -80px; }
 
 #gnav ul {
   overflow: hidden;
@@ -184,8 +201,6 @@ body {
 
 #gnav li {
   float: left;
-  width: 156px;
-  border-right: #fff 1px solid;
 }
 
 #gnav li:first-child {

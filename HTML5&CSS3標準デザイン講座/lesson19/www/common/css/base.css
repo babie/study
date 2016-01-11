@@ -106,21 +106,28 @@ body {
   background: url('../img/bg_header.png') #e6e6e6;
 }
 
+#header.inner {
+  display: table;
+}
+
 #logo {
-  float: left;
   margin-right: 20px;
+  display: table-cell;
+  vertical-align: middle;
 }
 
 #catch {
-  float: left;
+  display: table-cell;
+  vertical-align: middle;
 }
 
 #info {
-  float: right;
   width: 20em;
   padding: 10px;
   border: #ccc 1px solid;
   background: #fff;
+  display: table-cell;
+  vertical-align: middle;
 }
 
 /* フッター
@@ -134,6 +141,15 @@ body {
   float: left;
 }
 
+#flink li {
+  display: inline;
+}
+
+#flink a {
+  padding: 0 10px;
+  background: url('../img/ico_arw01.png') left center no-repeat;
+}
+
 #copyright {
   float: right;
 }
@@ -145,7 +161,36 @@ body {
 }
 
 #gnav a {
+  display: block;
+  padding: 10px 0;
+  text-align: center;
+  text-decoration: none;
   color: #fff;
+}
+
+#gnav a:hover {
+  background: #CCE739;
+}
+
+#gnav a.selected {
+  background: #fff;
+  color: #00c4ab;
+  font-weight: bold;
+}
+
+#gnav ul {
+  overflow: hidden;
+}
+
+#gnav li {
+  float: left;
+  width: 156px;
+  border-right: #fff 1px solid;
+}
+
+#gnav li:first-child {
+  width: 153px;
+  border-left: #fff 1px solid;
 }
 
 /* コンテンツエリア
@@ -162,6 +207,18 @@ body {
 ---------------------------*/
 #pankuzu {
   margin-bottom: 30px;
+  padding-bottom: 10px;
+  border-bottom: #ccc 1px dotted;
+}
+
+#pankuzu li {
+  display: inline;
+  font-size: 83%;
+}
+
+#pankuzu a {
+  padding-right: 15px;
+  background: url('../img/ico_arw01.png') right center no-repeat;
 }
 
 /* メインコンテンツ

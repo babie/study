@@ -8,10 +8,10 @@
 (defroutes app-routes
   (GET "/" [] "Hello World")
   (GET "/cheshire-cat" []
-       (rr/content-type (rr/response {:name "Cheshire Cat" :status :grinning}) "application/json; charset=utf-8"))
+       (rr/response {:name "Cheshire Cat" :status :grinning}))
   (route/not-found "Not Found"))
 
 (def app
   (-> app-routes
-    (wrap-defaults site-defaults)
-    (ring-json/wrap-json-response)))
+    (ring-json/wrap-json-response)
+    (wrap-defaults site-defaults)))

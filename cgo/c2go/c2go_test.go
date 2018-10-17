@@ -5,22 +5,36 @@ import (
 )
 
 func TestGetTrue(t *testing.T) {
-	bt := GetTrue()
-	if bt != true {
-		t.Fatalf("Test failed of GetTrue(): t = %#v", bt)
+	b := GetTrue()
+	if b != true {
+		t.Fatalf("Test failed: GetTrue() returns %#v", b)
 	}
 }
 
 func TestGetFalse(t *testing.T) {
-	f := GetFalse()
-	if f != false {
-		t.Fatalf("Test failed of GetFalse(): f = %#v", f)
+	b := GetFalse()
+	if b != false {
+		t.Fatalf("Test failed: GetFalse() returns %#v", b)
 	}
 }
 
 func TestGetInt(t *testing.T) {
-	i := GetInt()
-	if i != 42 {
-		t.Fatalf("Test failed: i = %#v", i)
+	n := GetInt()
+	if n != 42 {
+		t.Fatalf("Test failed: GetInt() returns %#v", n)
+	}
+}
+
+func TestGetFloat(t *testing.T) {
+	n := GetFloat()
+	if n != 1.4141356 {
+		t.Fatalf("Test failed: GetFloat returns %#v", n)
+	}
+}
+
+func TestGetDouble(t *testing.T) {
+	n := GetDouble()
+	if n != 3.14159265359 {
+		t.Fatalf("Test failed: GetDouble returns %#v", n)
 	}
 }

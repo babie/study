@@ -1,6 +1,8 @@
 
 #include "c2go.h"
 
-bool t = true;
-bool f = false;
-int i = 42;
+bool bt = true;
+bool bf = false;
+int ni = 42;
+float nf = 1.4141356f;
+double nd = 3.14159265359;

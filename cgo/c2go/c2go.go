@@ -7,18 +7,29 @@ import "C"
 
 // GetTrue Get true value
 func GetTrue() bool {
-	bt := bool(C.t)
-	return bt
+	b := bool(C.bt)
+	return b
 }
 
 // GetFalse Get false value
 func GetFalse() bool {
-	bf := bool(C.f)
-	return bf
+	b := bool(C.bf)
+	return b
 }
 
 // GetInt Get int value
 func GetInt() int {
-	i := int(C.i)
-	return i
+	n := int(C.ni)
+	return n
+}
+
+// GetFloat Get float value
+func GetFloat() float32 {
+	n := float32(C.nf)
+	return n
+}
+
+func GetDouble() float64 {
+	n := float64(C.nd)
+	return n
 }

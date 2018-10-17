@@ -4,8 +4,10 @@
 
 #include <stdbool.h>
 
-extern bool t;
-extern bool f;
-extern int i;
+extern bool bt;
+extern bool bf;
+extern int ni;
+extern float nf;
+extern double nd;
 
 #endif  // C2GO_H

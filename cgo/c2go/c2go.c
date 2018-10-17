@@ -1,4 +1,6 @@
 
 #include "c2go.h"
 
-int b = 42;
+bool t = true;
+bool f = false;
+int i = 42;

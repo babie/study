@@ -5,8 +5,20 @@ package c2go
 */
 import "C"
 
-// GetInt Get bool value
+// GetTrue Get true value
+func GetTrue() bool {
+	bt := bool(C.t)
+	return bt
+}
+
+// GetFalse Get false value
+func GetFalse() bool {
+	bf := bool(C.f)
+	return bf
+}
+
+// GetInt Get int value
 func GetInt() int {
-	b := int(C.b)
-	return b
+	i := int(C.i)
+	return i
 }

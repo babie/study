@@ -7,6 +7,10 @@ import (
 )
 
 func main() {
-	b := c2go.GetInt()
-	fmt.Printf("GetInt: %#v", b)
+	t := c2go.GetTrue()
+	f := c2go.GetFalse()
+	i := c2go.GetInt()
+	fmt.Printf("GetTrue: %#v\n", t)
+	fmt.Printf("GetFalse: %#v\n", f)
+	fmt.Printf("GetInt: %#v\n", i)
 }

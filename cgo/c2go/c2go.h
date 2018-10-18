@@ -9,5 +9,6 @@ extern bool bf;
 extern int ni;
 extern float nf;
 extern double nd;
+extern char* cs;
 
 #endif  // C2GO_H

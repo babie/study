@@ -38,3 +38,10 @@ func TestGetDouble(t *testing.T) {
 		t.Fatalf("Test failed: GetDouble() returns %#v", n)
 	}
 }
+
+func TestGetChars(t *testing.T) {
+	s := GetChars()
+	if s != "foo" {
+		t.Fatalf("Test failed: GetChars() returns %#v", s)
+	}
+}

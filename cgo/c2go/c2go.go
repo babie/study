@@ -29,7 +29,14 @@ func GetFloat() float32 {
 	return n
 }
 
+// GetDouble Get double value
 func GetDouble() float64 {
 	n := float64(C.nd)
 	return n
+}
+
+// GetChars Get char* value
+func GetChars() string {
+	s := C.GoString(C.cs)
+	return s
 }

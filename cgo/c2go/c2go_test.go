@@ -28,13 +28,13 @@ func TestGetInt(t *testing.T) {
 func TestGetFloat(t *testing.T) {
 	n := GetFloat()
 	if n != 1.4141356 {
-		t.Fatalf("Test failed: GetFloat returns %#v", n)
+		t.Fatalf("Test failed: GetFloat() returns %#v", n)
 	}
 }
 
 func TestGetDouble(t *testing.T) {
 	n := GetDouble()
 	if n != 3.14159265359 {
-		t.Fatalf("Test failed: GetDouble returns %#v", n)
+		t.Fatalf("Test failed: GetDouble() returns %#v", n)
 	}
 }

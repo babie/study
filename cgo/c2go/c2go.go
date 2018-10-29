@@ -5,6 +5,16 @@ package c2go
 */
 import "C"
 
+// St struct for copy
+type St struct {
+	Bt bool
+	Bf bool
+	Ni int
+	Nf float32
+	Nd float64
+	Cs string
+}
+
 // GetTrue Get true value
 func GetTrue() bool {
 	b := bool(C.bt)
@@ -39,4 +49,18 @@ func GetDouble() float64 {
 func GetChars() string {
 	s := C.GoString(C.cs)
 	return s
+}
+
+// GetStruct Get struct
+func GetStruct() St {
+	s := C.st
+	st := St{
+		Bt: bool(s.bt),
+		Bf: bool(s.bf),
+		Ni: int(s.ni),
+		Nf: float32(s.nf),
+		Nd: float64(s.nd),
+		Cs: C.GoString(s.cs),
+	}
+	return st
 }

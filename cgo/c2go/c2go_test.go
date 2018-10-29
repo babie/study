@@ -7,41 +7,63 @@ import (
 func TestGetTrue(t *testing.T) {
 	b := GetTrue()
 	if b != true {
-		t.Fatalf("Test failed: GetTrue() returns %#v", b)
+		t.Fatalf("GetTrue() returns %#v", b)
 	}
 }
 
 func TestGetFalse(t *testing.T) {
 	b := GetFalse()
 	if b != false {
-		t.Fatalf("Test failed: GetFalse() returns %#v", b)
+		t.Fatalf("GetFalse() returns %#v", b)
 	}
 }
 
 func TestGetInt(t *testing.T) {
 	n := GetInt()
 	if n != 42 {
-		t.Fatalf("Test failed: GetInt() returns %#v", n)
+		t.Fatalf("GetInt() returns %#v", n)
 	}
 }
 
 func TestGetFloat(t *testing.T) {
 	n := GetFloat()
 	if n != 1.4141356 {
-		t.Fatalf("Test failed: GetFloat() returns %#v", n)
+		t.Fatalf("GetFloat() returns %#v", n)
 	}
 }
 
 func TestGetDouble(t *testing.T) {
 	n := GetDouble()
 	if n != 3.14159265359 {
-		t.Fatalf("Test failed: GetDouble() returns %#v", n)
+		t.Fatalf("GetDouble() returns %#v", n)
 	}
 }
 
 func TestGetChars(t *testing.T) {
 	s := GetChars()
 	if s != "foo" {
-		t.Fatalf("Test failed: GetChars() returns %#v", s)
+		t.Fatalf("GetChars() returns %#v", s)
+	}
+}
+
+func TestGetStruct(t *testing.T) {
+	s := GetStruct()
+	if s.Bt != true {
+		t.Fatalf("GetStruct().Bt returns %#v", s.Bt)
+	}
+	if s.Bf != false {
+		t.Fatalf("GetStruct().Bf returns %#v", s.Bf)
+	}
+	if s.Ni != 42 {
+		t.Fatalf("GetStruct().Ni returns %#v", s.Ni)
+	}
+	if s.Nf != 1.4141356 {
+		t.Fatalf("GetStruct().Nf returns %#v", s.Nf)
+	}
+	if s.Nd != 3.14159265359 {
+		t.Fatalf("GetStruct().Nd returns %#v", s.Nd)
+	}
+	if s.Cs != "foo" {
+		t.Fatalf("GetStruct().Cs returns %#v", s.Cs)
 	}
 }
